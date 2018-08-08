@@ -45,7 +45,7 @@ AppMaps.Init('map');
 ```javascript
 AppMaps.Init('map') //принимает в качестве аргумента селектор
 ```
-#### `.ClearMap(selector)`
+#### `.ClearMap()`
 
 Удалить все маркеры с карты
 
