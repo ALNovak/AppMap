@@ -32,7 +32,7 @@ AppMaps.Init('map');
 ```
 ### Function
 
-| Left-Aligned  | Center Aligned  | Right Aligned |
+| Operator      | Description  | Example |
 |:------------- |:---------------:| -------------:|
 | Init  ()      | some wordy text |     **$1600** |
 | ClearMap      | centered        |         $12   |
