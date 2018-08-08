@@ -32,6 +32,12 @@ AppMaps.Init('map');
 ```
 ### Function
 
+| Left-Aligned  | Center Aligned  | Right Aligned |
+|:------------- |:---------------:| -------------:|
+| Init  ()      | some wordy text |     **$1600** |
+| ClearMap      | centered        |         $12   |
+| SetPoints     | are neat        |        ~~$1~~ |
+
 ``` text 
 Иницилизация карты 
 function принимает параметр selector
@@ -39,7 +45,7 @@ function принимает параметр selector
 ``` javscript
 Иницилизация карты 
 function принимает параметр selector
-function
+### Example
 Init (selector){
 ...
 }
