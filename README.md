@@ -35,7 +35,7 @@ AppMaps.Init('map');
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
 | Init  ()                       | принимает селектор                                            |    AppMaps.Init('map') |
-| ClearMap  ()                   | -                                                             |    ClearMap.Init() |
+| ClearMap  ()                   | -                                                             |    AppMaps.ClearMap() |
 
 
 #### `.Init(selector)`
@@ -50,5 +50,5 @@ AppMaps.Init('map') //
 Удалить все маркеры с карты
 
 ```javascript
-ClearMap.Init() //
+AppMaps.ClearMap.Init() //
 ```
