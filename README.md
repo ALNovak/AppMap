@@ -35,6 +35,7 @@ AppMaps.Init('map');
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
 | Init  ()                       | принимает селектор                                            |    AppMaps.Init('map') |
+| ClearMap  ()                   | -                                                             |    ClearMap.Init() |
 
 
 #### `.Init(selector)`
