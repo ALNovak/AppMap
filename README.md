@@ -49,15 +49,10 @@ AppMaps.Init('map');
 | SetPoints     | are neat                    |                 ~~$1~~ |
 
 
-``` text 
-Иницилизация карты 
-function принимает параметр selector
-```
-``` javscript
-Иницилизация карты 
-function принимает параметр selector
-### Example
-Init (selector){
-...
-}
+#### `.Init(selector)`
+
+Инициализация карты
+
+```javascript
+AppMaps.Init('map') //
 ```
