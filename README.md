@@ -33,10 +33,10 @@ AppMaps.Init('map');
 ### Function
 
 | Operator      | Description  | Example |
-|:------------- |:---------------:| -------------:|
-| Init  ()      | some wordy text |     **$1600** |
-| ClearMap      | centered        |         $12   |
-| SetPoints     | are neat        |        ~~$1~~ |
+|:------------- |:---------------------------:|          -------------:|
+| Init  ()      | принимает парамерт селектор |    AppMaps.Init('map') |
+| ClearMap      | centered                    |                  $12   |
+| SetPoints     | are neat                    |                 ~~$1~~ |
 
 ``` text 
 Иницилизация карты 
