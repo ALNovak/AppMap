@@ -1,4 +1,4 @@
-# AppMap
+# AppMap (Google Map)
 
 > A simple jQuery datepicker plugin.
 
