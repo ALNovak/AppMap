@@ -33,20 +33,8 @@ AppMaps.Init('map');
 ### Function
 
 | Operator                       | Description  |                Example |
-|:-------------                  |:---------------------------:|          -------------:|
-| Init  ()        | принимает селектор          |    AppMaps.Init('map') |
-| ClearMap      | centered                    |                  $12   |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| GetAddress     | принимает в качестве аргумента координаты Latitude и Longitude                    |                 AppMaps.GetAddress('55.753564, 37.621085
-') |
-| GetZoom     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
-| SetPoints     | are neat                    |                 ~~$1~~ |
+|:-------------                  |:---------------------------:|-------------:|
+| Init  ()                       | принимает селектор                                            |    AppMaps.Init('map') |
 
 
 #### `.Init(selector)`
@@ -55,4 +43,11 @@ AppMaps.Init('map');
 
 ```javascript
 AppMaps.Init('map') //
+```
+#### `.ClearMap(selector)`
+
+Удалить все маркеры с карты
+
+```javascript
+ClearMap.Init() //
 ```
