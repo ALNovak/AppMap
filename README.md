@@ -34,7 +34,7 @@ AppMaps.Init('map');
 
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
-| Init  ()                       | принимает селектор                                            |    AppMaps.Init('map') |
+| Init  ()                       | принимает в качестве аргумента селектор                       |    AppMaps.Init('map') |
 | ClearMap  ()                   | -                                                             |    AppMaps.ClearMap() |
 
 
@@ -43,7 +43,7 @@ AppMaps.Init('map');
 Инициализация карты
 
 ```javascript
-AppMaps.Init('map') //
+AppMaps.Init('map') //принимает в качестве аргумента селектор
 ```
 #### `.ClearMap(selector)`
 
