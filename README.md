@@ -28,10 +28,13 @@ Include files:
 
 
 ```javascript
-<script src="/AppMaps.js"></script>
-<link  href="/AppMaps.css" rel="stylesheet">
-<script src="/Google.js"></script>
-<script src="/MarkerClustererPlus.js"></script>
-<script src="/InfoBox.js"></script>
+AppMaps.Init('map');
+```
+### Function
 
+``` javscript
+function
+Init (selector){
+...
+}
 ```
