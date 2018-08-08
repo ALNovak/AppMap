@@ -37,7 +37,7 @@ AppMaps.Init('map');
 | Init  ()        | принимает селектор          |    AppMaps.Init('map') |
 | ClearMap      | centered                    |                  $12   |
 | SetPoints     | are neat                    |                 ~~$1~~ |
-| GetAddress     | are neat                    |                 ~~$1~~ |
+| GetAddress     | принимает в качестве аргумента координаты Latitude и Longitude                    |                 ~~$1~~ |
 | GetZoom     | are neat                    |                 ~~$1~~ |
 | SetPoints     | are neat                    |                 ~~$1~~ |
 | SetPoints     | are neat                    |                 ~~$1~~ |
