@@ -32,11 +32,21 @@ AppMaps.Init('map');
 ```
 ### Function
 
-| Operator      | Description  | Example |
-|:------------- |:---------------------------:|          -------------:|
-| Init  ()      | принимает парамерт селектор |    AppMaps.Init('map') |
+| Operator                       | Description  |                Example |
+|:-------------                  |:---------------------------:|          -------------:|
+| Init  ()        | принимает селектор          |    AppMaps.Init('map') |
 | ClearMap      | centered                    |                  $12   |
 | SetPoints     | are neat                    |                 ~~$1~~ |
+| GetAddress     | are neat                    |                 ~~$1~~ |
+| GetZoom     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+| SetPoints     | are neat                    |                 ~~$1~~ |
+
 
 ``` text 
 Иницилизация карты 
