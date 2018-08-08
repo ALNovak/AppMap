@@ -32,6 +32,9 @@ AppMaps.Init('map');
 ```
 ### Function
 
+``` text Иницилизация карты 
+function принимает параметр selector
+```
 ``` javscript
 function
 Init (selector){
