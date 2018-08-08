@@ -4,7 +4,7 @@
 
 ```text
 dist/
-├── AppMaps.css
+├── AppMaps.js
 ├── google.maps.js
 └── MarkerClustererPlus.js
 └── Infobox.js
