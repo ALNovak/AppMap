@@ -1,9 +1,8 @@
 # AppMap (Google Map)
 
-> A simple jQuery datepicker plugin.
+> A simple plugin.
 
 ```text
-dist/
 ├── AppMaps.js
 ├── google.maps.js
 └── MarkerClustererPlus.js
