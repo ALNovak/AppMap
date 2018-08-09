@@ -37,7 +37,7 @@ AppMaps.Init('map');
 | Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init('map,'google')                                                |
 | ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap() |
 | SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints(Array)                                                |
-| ShowBaloon  (html,'coord')                 | принимает в качестве аргументов шаблон html  и объект Latitude Longitude                        |    var html = "<div><span></span></div>
+| ShowBaloon  (html,'coord')                 | принимает в качестве аргументов шаблон html  и объект Latitude Longitude                        |    var html = <dl><div><span></span></div></dl>
 var coord = {
 	Latitude : 55.670505
 	Longitude: 37.60845589999997
