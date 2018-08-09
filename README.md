@@ -158,12 +158,6 @@ AppMaps.Map.SetZoomMax() //
 ```javascript
 AppMaps.Map.GetBounds() // возвращает координаты границы карты
 ```
-
-#### `.EnableOnclickMap()`
-Вкл/Выкл событие клика на карте
-```javascript
-AppMaps.Map.EnableOnclickMap() // 
-```
 #### `.EnableOnclickMap()`
 Вкл событие клика на карте
 ```javascript
