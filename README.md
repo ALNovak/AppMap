@@ -82,49 +82,49 @@ var coord = {
     
 AppMaps.Map.SetPoints(html,coord) // Принимает шаблон html и объект с координатами
 ```
-### `.HideBaloon()`
+#### `.HideBaloon()`
 
 Закрыть информационное окно
 
 ```javascript
 AppMaps.Map.HideBaloon() // Принимает массив точек
 ```
-### `.FitBounds()`
+#### `.FitBounds()`
 
 Закрыть информационное окно
 
 ```javascript
 AppMaps.Map.FitBounds() // Масштабирует карту таким образом что-бы все добавленнеы точки были видны на карте
 ```
-### `.RouteMap()`
+#### `.RouteMap()`
 
 Отобразить маршрут на карте
 
 ```javascript
 AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
 ```
-### `.RouteMap()`
+#### `.RouteMap()`
 
 Отобразить маршрут на карте
 
 ```javascript
 AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
 ```
-### `.SetZoomMin()`
+#### `.SetZoomMin()`
 
 Отобразить маршрут на карте
 
 ```javascript
 AppMaps.Map.SetZoomMin() // Установить минимальный зоом
 ```
-### `.MapDefOption()`
+#### `.MapDefOption()`
 
 Выставить настройки карты по умолчанию
 
 ```javascript
 AppMaps.Map.MapDefOption() // 
 ```
-### `.GetDetailsPoint(placeId)`
+#### `.GetDetailsPoint(placeId)`
 
 Получить детальную информацию по точке на основе Google PlaceID
 
@@ -132,7 +132,7 @@ AppMaps.Map.MapDefOption() //
 AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
 ```
 
-### `.GetDetailsPointAutocomplete(point,type)`
+#### `.GetDetailsPointAutocomplete(point,type)`
 
 ```javascript
 AppMaps.Map.GetDetailsPointAutocomplete(point,type) // принимает объект point и тип
