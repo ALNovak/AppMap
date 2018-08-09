@@ -8,12 +8,6 @@
 └── MarkerClustererPlus.js
 └── Infobox.js
 ```
-### Install
-
-```shell
-npm install @AlNovak/AppMap
-```
-
 Include files:
 
 ```html
@@ -28,7 +22,7 @@ Include files:
 
 
 ```javascript
-AppMaps.Init('map');
+AppMap.Init('map','google');
 ```
 ### Function
 
@@ -38,14 +32,14 @@ AppMaps.Init('map');
 Инициализация карты
 
 ```javascript
-AppMaps.Init('map') //принимает в качестве аргумента селектор
+AppMap.Init('map','google'); //принимает в качестве аргумента селектор и название карты
 ```
 #### `.ClearMap()`
 
 Удалить все маркеры с карты
 
 ```javascript
-AppMaps.Map.ClearMap.Init() //
+AppMaps.Map.ClearMap() //
 ```
 #### `.SetPoints()`
 
