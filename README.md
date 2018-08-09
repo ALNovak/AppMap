@@ -162,24 +162,24 @@ AppMaps.Map.SetZoomMax() //
 #### `.GetBounds()`
 Получить координаты границы карты
 ```javascript
-AppMaps.Map.GetBounds() // возвращает 
+AppMaps.Map.GetBounds() // возвращает координаты границы карты
 ```
 
 #### `.EnableOnclickMap()`
 Вкл/Выкл событие клика на карте
 ```javascript
-AppMaps.Map.EnableOnclickMap() // возвращает 
+AppMaps.Map.EnableOnclickMap() // 
 ```
 #### `.EnableOnclickMap()`
 Вкл событие клика на карте
 ```javascript
-AppMaps.Map.EnableOnclickMap() // возвращает 
+AppMaps.Map.EnableOnclickMap() // 
 ```
 
 #### `.DisableZoomChangeMap()`
 Выкл передавать параметры zoom на карте
 ```javascript
-AppMaps.Map.DisableZoomChangeMap() // возвращает 
+AppMaps.Map.DisableZoomChangeMap() // т 
 ```
 
 #### `.Distance()`
@@ -203,7 +203,7 @@ AppMaps.Map.BelongingPolygon() //
 #### `.MarkerClusterPoint()`
 Получить информацию о точках в кластере
 ```javascript
-AppMaps.Map.MarkerClusterPoint() // 
+AppMaps.Map.MarkerClusterPoint() // возвращает массив точек в выбраном кластере
 ```
 #### `.Resize()`
 Измененить границы блока карты
@@ -252,7 +252,7 @@ var coord = {
 	Latitude : 55.670505
 	Longitude: 37.60845589999997
     }
- var  type = 'polyne'//circle
-AppMaps.Map.DrawingShapes(coord, type) // 
+
+AppMaps.Map.DrawingShapes(coord, 'polyne') // 
 ```
 
