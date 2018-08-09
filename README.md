@@ -245,9 +245,14 @@ AppMaps.Map.ShowRadius() //
 AppMaps.Map.HideRadius() // 
 ```
 
-### `.DrawingShapes(e, type)`
+### `.DrawingShapes(coord, type)`
 Отобразить на карте circle, polyne
 ```javascript
+var coord = {
+	Latitude : 55.670505
+	Longitude: 37.60845589999997
+    }
+ var  type = 'polyne'//circle
 AppMaps.Map.DrawingShapes(coord, type) // 
 ```
 
