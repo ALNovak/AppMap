@@ -32,20 +32,6 @@ AppMaps.Init('map');
 ```
 ### Function
 
-| Operator                       | Description  |                Example |
-|:-------------                  |:---------------------------:|-------------:|
-| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","google");                                               |
-| ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap();                                                    |
-| SetPoints  (Array)                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints  (Array)                                                 |
-| ShowBaloon  (html,'coord')     | принимает в качестве аргументов шаблон html  и объект Latitude Longitude |    AppMaps.Map.ShowBaloon  (html,'coord')                                                                |
-| RouteMap  (bool,'start, end')     | принимает в качестве аргументов шаблон bool отображать ли на карте маршрут  start объект Latitude Longitude  end объект Latitude Longitude |    AppMaps.Map.RouteMap  (bool,'start, end')                                                                |
-| SetZoomMin  ()     | Установить минимальный zoom карты |    AppMaps.Map.SetZoomMin  ()                                                                |
-| GetDetailsPoint  ()     | Получить подробную информацию о точке, принимает Google PlaceId |    AppMaps.Map.GetDetailsPoint (placeId)                                                                |
-| GetDetailsPointAutocomplete  ()     | Получить подробную информацию о точке, |    AppMaps.Map.GetDetailsPointAutocomplete (point, type)                                                                |
-
-
-
-
 
 #### `.Init(selector)`
 
@@ -133,7 +119,142 @@ AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
 ```
 
 #### `.GetDetailsPointAutocomplete(point,type)`
-
+Получить детальную информацию по точке на основе Google PlaceID
 ```javascript
 AppMaps.Map.GetDetailsPointAutocomplete(point,type) // принимает объект point и тип
 ```
+
+#### `.GetZoom(point,type)`
+Получить текущий зум карты
+```javascript
+AppMaps.Map.GetZoom() // возвращает текущий зум карты
+```
+
+#### `.ShowPoint(point, d, cluster)`
+Показать точку на карте
+```javascript
+AppMaps.Map.ShowPoint() // принимает объект point, bool (отобразить маркер в границах карты, bool (добавть точку в кластер))
+```
+
+#### `.SearchPoint(text, location)`
+Поиск по карте (AutocompleteService)
+```javascript
+AppMaps.Map.SearchPoint() // принимает string, и объект с координатами (если нужно ограничить поиск по карте в радиусе от начальной точки)
+```
+
+#### `.GetBaloonID()`
+Поиск по карте (AutocompleteService)
+```javascript
+AppMaps.Map.GetBaloonID() // получить id информационного окна
+```
+#### `.SetZoomMin()`
+Выставить зоом карты
+```javascript
+AppMaps.Map.SetZoomMin() // 
+```
+
+#### `.SetZoomMax()`
+Выставить максимальный зоом карты
+```javascript
+AppMaps.Map.SetZoomMax() // 
+```
+
+#### `.GetBounds()`
+Получить координаты границы карты
+```javascript
+AppMaps.Map.GetBounds() // возвращает 
+```
+
+#### `.EnableOnclickMap()`
+Вкл/Выкл событие клика на карте
+```javascript
+AppMaps.Map.EnableOnclickMap() // возвращает 
+```
+#### `.EnableOnclickMap()`
+Вкл событие клика на карте
+```javascript
+AppMaps.Map.EnableOnclickMap() // возвращает 
+```
+
+#### `.DisableZoomChangeMap()`
+Выкл передавать параметры zoom на карте
+```javascript
+AppMaps.Map.DisableZoomChangeMap() // возвращает 
+```
+
+#### `.Distance()`
+Рассчитать вхождение точек от начальной точки (радиус)
+```javascript
+AppMaps.Distance() // 
+```
+
+#### `.Distance()`
+Рассчитать вхождение точек от начальной точки (радиус)
+```javascript
+AppMaps.Distance() // 
+```
+
+#### `.BelongingPolygon()`
+Рассчитать вхождение точек от начальной точки (в полигон)
+```javascript
+AppMaps.Distance() // 
+```
+
+#### `.AddSetPoints()`
+Сохранить точки в массив (неудаляемые точки)
+```javascript
+AppMaps.Map.BelongingPolygon() // 
+```
+
+#### `.MarkerClusterPoint()`
+Получить информацию о точках в кластере
+```javascript
+AppMaps.Map.MarkerClusterPoint() // 
+```
+
+#### `.Resize()`
+Измененить границы блока карты
+```javascript
+AppMaps.Map.Resize() // 
+```
+
+#### `.VisibleMarker(bool)`
+Показывать/Скрывать точки на карте
+```javascript
+AppMaps.Map.VisibleMarker() // 
+```
+
+#### `.Fail()`
+Вывод ошибок карты 
+```javascript
+AppMaps.Map.Fail() // 
+```
+
+### `.TransitLayer()`
+Отобразить транзитный слой на карте
+```javascript
+AppMaps.Map.TransitLayer() // 
+```
+### `.TrafficLayer()`
+Отобразить пробки на карте
+```javascript
+AppMaps.Map.TrafficLayer() // 
+```
+
+### `.ShowRadius()`
+Показать радиус на карте
+```javascript
+AppMaps.Map.ShowRadius() // 
+```
+### `.HideRadius()`
+Скрыть радиус на карте
+```javascript
+AppMaps.Map.HideRadius() // 
+```
+
+### `.DrawingShapes(e, type)`
+Отобразить на крте circle, polyne
+```javascript
+AppMaps.Map.DrawingShapes(coord, type) // 
+```
+
