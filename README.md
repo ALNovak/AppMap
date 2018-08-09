@@ -36,8 +36,11 @@ AppMaps.Init('map');
 |:-------------                  |:---------------------------:|-------------:|
 | Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","googl");                                               |
 | ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap();                                                    |
-| SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints  (html,'coord')                                                 |
+| SetPoints  (Array)                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints  (Array)                                                 |
 | ShowBaloon  (html,'coord')     | принимает в качестве аргументов шаблон html  и объект Latitude Longitude |    AppMaps.Map.ShowBaloon  (html,'coord')                                                                |
+| RouteMap  (bool,'start, end')     | принимает в качестве аргументов шаблон bool отображать ли на карте маршрут  start объект Latitude Longitude  end объект Latitude Longitude |    AppMaps.Map.RouteMap  (bool,'start, end')                                                                |
+| SetZoomMin  ()     | Установить минимальный zoom карты |    AppMaps.Map.SetZoomMin  ()                                                                |
+
 
 
 #### `.Init(selector)`
@@ -67,11 +70,67 @@ AppMaps.Map.SetPoints.(Array) // Принимает массив точек
 Показать информационное окно на карте
 
 ```javascript
-var html = '<div><span></span></div>'
-	
-	var coord = {
+var html = '<div><span></span></div>'	
+var coord = {
 	Latitude : 55.670505
 	Longitude: 37.60845589999997
-	}
-AppMaps.Map.SetPoints.(html,coord) // Принимает шаблон html и объект с координатами
+    }
+    
+AppMaps.Map.SetPoints(html,coord) // Принимает шаблон html и объект с координатами
+```
+
+
+### `.HideBaloon()`
+
+Закрыть информационное окно
+
+```javascript
+AppMaps.Map.HideBaloon() // Принимает массив точек
+```
+
+### `.FitBounds()`
+
+Закрыть информационное окно
+
+```javascript
+AppMaps.Map.FitBounds() // Масштабирует карту таким образом что-бы все добавленнеы точки были видны на карте
+```
+
+### `.RouteMap()`
+
+Отобразить маршрут на карте
+
+```javascript
+AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
+```
+
+### `.RouteMap()`
+
+Отобразить маршрут на карте
+
+```javascript
+AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
+```
+## `.SetZoomMin()`
+
+Отобразить маршрут на карте
+
+```javascript
+AppMaps.Map.SetZoomMin() // Установить минимальный зоом
+```
+
+## `.MapDefOption()`
+
+Выставить настройки карты по умолчанию
+
+```javascript
+AppMaps.Map.MapDefOption() // 
+```
+
+## `.GetDetailsPoint()`
+
+Получить детальную информацию по точке на основе PlaceID
+
+```javascript
+AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
 ```
