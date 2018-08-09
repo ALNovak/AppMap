@@ -34,16 +34,10 @@ AppMaps.Init('map');
 
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
-| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init('map,'google')                                                |
-| ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap() |
-| SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints(Array)                                                |
-| ShowBaloon  (html,'coord')                 | принимает в качестве аргументов шаблон html  и объект Latitude Longitude                        |    var html = <dl><div><span></span></div></dl>
-var coord = {
-	Latitude : 55.670505
-	Longitude: 37.60845589999997
-	}
-AppMaps.Map.ShowBaloon(html,coord);                                                |
-           |
+| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","googl");                                                |
+| ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap(); |
+| SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    ShowBaloon  (html,'coord')                                                 |
+| ShowBaloon  (html,'coord')                 | принимает в качестве аргументов шаблон html  и объект Latitude Longitude                        |      
 
 
 #### `.Init(selector)`
