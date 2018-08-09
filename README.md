@@ -111,7 +111,7 @@ AppMaps.Map.RouteMap(bool, start, end) // Построить и отобрази
 ```javascript
 AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
 ```
-## `.SetZoomMin()`
+### `.SetZoomMin()`
 
 Отобразить маршрут на карте
 
@@ -119,7 +119,7 @@ AppMaps.Map.RouteMap(bool, start, end) // Построить и отобрази
 AppMaps.Map.SetZoomMin() // Установить минимальный зоом
 ```
 
-## `.MapDefOption()`
+### `.MapDefOption()`
 
 Выставить настройки карты по умолчанию
 
@@ -129,7 +129,7 @@ AppMaps.Map.MapDefOption() //
 
 ## `.GetDetailsPoint()`
 
-Получить детальную информацию по точке на основе PlaceID
+Получить детальную информацию по точке на основе Google PlaceID
 
 ```javascript
 AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
