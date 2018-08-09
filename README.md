@@ -59,5 +59,19 @@ AppMaps.Map.ClearMap.Init() //
 Вывести маркеры на карте
 
 ```javascript
-AppMaps.Map.SetPoints.() // Принимает массив точек
+AppMaps.Map.SetPoints.(Array) // Принимает массив точек
+```
+
+#### `.ShowBaloon()`
+
+Показать информационное окно на карте
+
+```javascript
+var html = '<div><span></span></div>'
+	
+	var coord = {
+	Latitude : 55.670505
+	Longitude: 37.60845589999997
+	}
+AppMaps.Map.SetPoints.(html,coord) // Принимает шаблон html и объект с координатами
 ```
