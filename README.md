@@ -87,7 +87,7 @@ AppMaps.Map.FitBounds() // Масштабирует карту таким обр
 Отобразить маршрут на карте
 
 ```javascript
-AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки
+AppMaps.Map.RouteMap(bool, start, end) // Построить и отобразить маршрут на карте от начальной до конечной точки , принимает три параметра вкл/выкл (bool) отображение маршрута и объект point (start) начальная точка маршрута и (end)конечная точка маршрута, возвращает информацию о маршруте и статическую карту маршрута
 ```
 #### `.RouteMap()`
 
@@ -98,7 +98,7 @@ AppMaps.Map.RouteMap(bool, start, end) // Построить и отобрази
 ```
 #### `.SetZoomMin()`
 
-Отобразить маршрут на карте
+Установить минимальный зоом карты
 
 ```javascript
 AppMaps.Map.SetZoomMin() // Установить минимальный зоом
@@ -139,16 +139,16 @@ AppMaps.Map.ShowPoint() // принимает объект point, bool (отоб
 #### `.SearchPoint(text, location)`
 Поиск по карте (AutocompleteService)
 ```javascript
-AppMaps.Map.SearchPoint() // принимает string, и объект с координатами (если нужно ограничить поиск по карте в радиусе от начальной точки)
+AppMaps.Map.SearchPoint() // принимает string произвольный текст поиска, и объект с координатами (если нужно ограничить поиск по карте в радиусе от начальной точки), возвращает заполненый объект point
 ```
 
 #### `.GetBaloonID()`
-Поиск по карте (AutocompleteService)
+Получить id информационного окна
 ```javascript
-AppMaps.Map.GetBaloonID() // получить id информационного окна
+AppMaps.Map.GetBaloonID() // 
 ```
 #### `.SetZoomMin()`
-Выставить зоом карты
+Выставить минимальный зоом карты
 ```javascript
 AppMaps.Map.SetZoomMin() // 
 ```
@@ -188,12 +188,6 @@ AppMaps.Map.DisableZoomChangeMap() // возвращает
 AppMaps.Distance() // 
 ```
 
-#### `.Distance()`
-Рассчитать вхождение точек от начальной точки (радиус)
-```javascript
-AppMaps.Distance() // 
-```
-
 #### `.BelongingPolygon()`
 Рассчитать вхождение точек от начальной точки (в полигон)
 ```javascript
@@ -211,7 +205,6 @@ AppMaps.Map.BelongingPolygon() //
 ```javascript
 AppMaps.Map.MarkerClusterPoint() // 
 ```
-
 #### `.Resize()`
 Измененить границы блока карты
 ```javascript
@@ -253,7 +246,7 @@ AppMaps.Map.HideRadius() //
 ```
 
 ### `.DrawingShapes(e, type)`
-Отобразить на крте circle, polyne
+Отобразить на карте circle, polyne
 ```javascript
 AppMaps.Map.DrawingShapes(coord, type) // 
 ```
