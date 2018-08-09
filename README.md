@@ -124,7 +124,7 @@ AppMaps.Map.SetZoomMin() // Установить минимальный зоом
 ```javascript
 AppMaps.Map.MapDefOption() // 
 ```
-### `.GetDetailsPoint()`
+### `.GetDetailsPoint(placeId)`
 
 Получить детальную информацию по точке на основе Google PlaceID
 
@@ -132,4 +132,8 @@ AppMaps.Map.MapDefOption() //
 AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
 ```
 
-#### `.GetDetailsPointAutocomplete(point,type)`
+### `.GetDetailsPointAutocomplete(point,type)`
+
+```javascript
+AppMaps.Map.GetDetailsPointAutocomplete(point,type) // принимает объект point и тип
+```
