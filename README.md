@@ -34,12 +34,16 @@ AppMaps.Init('map');
 
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
-| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","googl");                                               |
+| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","google");                                               |
 | ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap();                                                    |
 | SetPoints  (Array)                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints  (Array)                                                 |
 | ShowBaloon  (html,'coord')     | принимает в качестве аргументов шаблон html  и объект Latitude Longitude |    AppMaps.Map.ShowBaloon  (html,'coord')                                                                |
 | RouteMap  (bool,'start, end')     | принимает в качестве аргументов шаблон bool отображать ли на карте маршрут  start объект Latitude Longitude  end объект Latitude Longitude |    AppMaps.Map.RouteMap  (bool,'start, end')                                                                |
 | SetZoomMin  ()     | Установить минимальный zoom карты |    AppMaps.Map.SetZoomMin  ()                                                                |
+| GetDetailsPoint  ()     | Получить подробную информацию о точке, принимает Google PlaceId |    AppMaps.Map.GetDetailsPoint (placeId)                                                                |
+| GetDetailsPointAutocomplete  ()     | Получить подробную информацию о точке, |    AppMaps.Map.GetDetailsPointAutocomplete (point, type)                                                                |
+
+
 
 
 
@@ -127,3 +131,5 @@ AppMaps.Map.MapDefOption() //
 ```javascript
 AppMaps.Map.GetDetailsPoint(placeID) // принимает Google placeID
 ```
+
+#### `.GetDetailsPointAutocomplete(point,type)`
