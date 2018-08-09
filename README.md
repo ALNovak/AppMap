@@ -223,29 +223,29 @@ AppMaps.Map.VisibleMarker() //
 AppMaps.Map.Fail() // 
 ```
 
-### `.TransitLayer()`
+#### `.TransitLayer()`
 Отобразить транзитный слой на карте
 ```javascript
 AppMaps.Map.TransitLayer() // 
 ```
-### `.TrafficLayer()`
+#### `.TrafficLayer()`
 Отобразить пробки на карте
 ```javascript
 AppMaps.Map.TrafficLayer() // 
 ```
 
-### `.ShowRadius()`
+#### `.ShowRadius()`
 Показать радиус на карте
 ```javascript
 AppMaps.Map.ShowRadius() // 
 ```
-### `.HideRadius()`
+#### `.HideRadius()`
 Скрыть радиус на карте
 ```javascript
 AppMaps.Map.HideRadius() // 
 ```
 
-### `.DrawingShapes(coord, type)`
+#### `.DrawingShapes(coord, type)`
 Отобразить на карте circle, polyne
 ```javascript
 var coord = {
