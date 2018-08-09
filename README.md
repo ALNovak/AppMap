@@ -34,10 +34,10 @@ AppMaps.Init('map');
 
 | Operator                       | Description  |                Example |
 |:-------------                  |:---------------------------:|-------------:|
-| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","googl");                                                |
-| ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap(); |
-| SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    ShowBaloon  (html,'coord')                                                 |
-| ShowBaloon  (html,'coord')                 | принимает в качестве аргументов шаблон html  и объект Latitude Longitude                        |      
+| Init  ()                       | принимает в качестве аргумента селектор  и тип карты                     |    AppMaps.Init("map","googl");                                               |
+| ClearMap  ()                   | -                                                                        |    AppMaps.Map.ClearMap();                                                    |
+| SetPoints  ()                  | принимает в качестве аргумента массив точек                              |    AppMaps.Map.SetPoints  (html,'coord')                                                 |
+| ShowBaloon  (html,'coord')     | принимает в качестве аргументов шаблон html  и объект Latitude Longitude |    AppMaps.Map.ShowBaloon  (html,'coord')                                                                |
 
 
 #### `.Init(selector)`
@@ -52,5 +52,12 @@ AppMaps.Init('map') //принимает в качестве аргумента 
 Удалить все маркеры с карты
 
 ```javascript
-AppMaps.ClearMap.Init() //
+AppMaps.Map.ClearMap.Init() //
+```
+#### `.SetPoints()`
+
+Вывести маркеры на карте
+
+```javascript
+AppMaps.Map.SetPoints.() // Принимает массив точек
 ```
