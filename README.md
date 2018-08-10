@@ -34,6 +34,22 @@ AppMap.Init('map','google');
 ```javascript
 AppMap.Init('map','google'); //принимает в качестве аргумента селектор и название карты
 ```
+#### `Callback`
+ AppMap.Set("onInit",function(e){CallbackMapInit(e)});
+    AppMap.Set("GetAddress",function(e){CallbackMapGetAddress(e)});
+    AppMap.Set("ChangeZoom",function(e){CallbackMapChangeZoom(e);});
+    AppMap.Set("MapClick",function(e){CallbackMapClick(e.Latitude,e.Longitude)});
+    AppMap.Set("MapClickPlaceId",function(e){CallbackMapClickPlaceId(e)});
+    AppMap.Set("BoundsChanged",function(){CallbackBoundsChanged();});
+    AppMap.Set("PointClick",function(e,d){CallbackPointClick(e);});
+    AppMap.Set("SearchAddress",function(e){CallbackMapSearchResult(e);});
+    AppMap.Set("InfoRoute",function(e){CallbackInfoRoute(e);});
+    AppMap.Set("ErrorMap",function(e){CallbackErrorMap(e);});
+    AppMap.Set("CountPoint",function(e){CallbackCountPoint(e);});
+    AppMap.Set("SetDetailsPoint",function(e){CallbackSetDetailsPoint(e);});
+    AppMap.Set("SetDetailsPointLocation", function (e) { CallbackSetDetailsPointLocation(e); });
+    AppMap.Set("OpenBallon", function (e) { CallbackOpenBallon(); });
+
 #### `.ClearMap()`
 
 Удалить все маркеры с карты
