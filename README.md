@@ -84,7 +84,7 @@ AppMaps.Map.SetPoints(html,coord) // Принимает шаблон html и о�
 Закрыть информационное окно
 
 ```javascript
-AppMaps.Map.HideBaloon() // Принимает массив точек
+AppMaps.Map.HideBaloon() //
 ```
 #### `.FitBounds()`
 
