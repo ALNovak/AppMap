@@ -36,7 +36,7 @@ AppMap.Init('map','google'); //принимает в качестве аргум
 ```
 #### `Callback`
 ```javascript
- AppMap.Set("onInit",function(e){CallbackMapInit(e)});
+    AppMap.Set("onInit",function(e){CallbackMapInit(e)});
     AppMap.Set("GetAddress",function(e){CallbackMapGetAddress(e)});
     AppMap.Set("ChangeZoom",function(e){CallbackMapChangeZoom(e);});
     AppMap.Set("MapClick",function(e){CallbackMapClick(e.Latitude,e.Longitude)});
