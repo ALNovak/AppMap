@@ -35,6 +35,7 @@ AppMap.Init('map','google');
 AppMap.Init('map','google'); //принимает в качестве аргумента селектор и название карты
 ```
 #### `Callback`
+```javascript
  AppMap.Set("onInit",function(e){CallbackMapInit(e)});
     AppMap.Set("GetAddress",function(e){CallbackMapGetAddress(e)});
     AppMap.Set("ChangeZoom",function(e){CallbackMapChangeZoom(e);});
@@ -49,7 +50,7 @@ AppMap.Init('map','google'); //принимает в качестве аргум
     AppMap.Set("SetDetailsPoint",function(e){CallbackSetDetailsPoint(e);});
     AppMap.Set("SetDetailsPointLocation", function (e) { CallbackSetDetailsPointLocation(e); });
     AppMap.Set("OpenBallon", function (e) { CallbackOpenBallon(); });
-
+```
 #### `.ClearMap()`
 
 Удалить все маркеры с карты
