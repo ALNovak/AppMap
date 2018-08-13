@@ -5,24 +5,28 @@
 ```text
 ├── AppMaps.js
 ├── google.maps.js
-└── MarkerClustererPlus.js
-└── Infobox.js
+└── yandex.maps.js
+└── baidu.maps.js
+└── leaftlet.maps.js
 ```
 Include files:
 
 ```html
 <script src="/AppMaps.js"></script>
 <link  href="/AppMaps.css" rel="stylesheet">
-<script src="/Google.js"></script>
-<script src="/MarkerClustererPlus.js"></script>
-<script src="/InfoBox.js"></script>
-
+<script src="/google.js"></script>
+<script src="/baidu.js"></script>
+<script src="/leaftlet.js"></script>
+<script src="/yandex.js"></script>
 ```
 ### Usage
 
 
 ```javascript
 AppMap.Init('map','google');
+AppMap.Init('map','yandex');
+AppMap.Init('map','baidu');
+AppMap.Init('map','leaftlet');
 ```
 ### Function
 
