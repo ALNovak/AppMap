@@ -4,10 +4,10 @@
 
 ```text
 ├── AppMaps.js
-├── google.maps.js
-└── yandex.maps.js
-└── baidu.maps.js
-└── leaftlet.maps.js
+├── google.js
+└── yandex.js
+└── baidu.js
+└── leaftlet.js
 ```
 Include files:
 
