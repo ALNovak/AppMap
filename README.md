@@ -1,4 +1,4 @@
-# AppMap (Google Map)
+# AppMap (Google Map,Yandex, Baidu, Leaftlet)
 
 > A simple plugin.
 
